@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/orlandomarin/NetBeansProjects/CapitalsAndStates/main.py">/Users/orlandomarin/NetBeansProjects/CapitalsAndStates/main.py</a></font></td></tr></table>
+    <p><tt>Orlando&nbsp;Marin<br>
+Project&nbsp;number&nbsp;2<br>
+&nbsp;<br>
+Given&nbsp;the&nbsp;attached&nbsp;file&nbsp;of&nbsp;the&nbsp;50&nbsp;states&nbsp;and&nbsp;capitals,&nbsp;Project&nbsp;2&nbsp;is&nbsp;to&nbsp;create&nbsp;<br>
+a&nbsp;game&nbsp;that&nbsp;will&nbsp;help&nbsp;your&nbsp;user&nbsp;learn&nbsp;the&nbsp;capital&nbsp;name&nbsp;of&nbsp;each&nbsp;state&nbsp;(Phase&nbsp;1)&nbsp;<br>
+and&nbsp;build&nbsp;a&nbsp;quizlet&nbsp;to&nbsp;test&nbsp;the&nbsp;learning&nbsp;(Phase&nbsp;2).&nbsp;The&nbsp;following&nbsp;is&nbsp;offered&nbsp;<br>
+as&nbsp;a&nbsp;guide&nbsp;to&nbsp;help&nbsp;you&nbsp;develop&nbsp;your&nbsp;program.&nbsp;Verify&nbsp;your&nbsp;results&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;<br>
+each&nbsp;step.<br>
+&nbsp;<br>
+1.&nbsp;Create&nbsp;your&nbsp;dictionary&nbsp;from&nbsp;the&nbsp;text&nbsp;file.&nbsp;DO&nbsp;NOT&nbsp;just&nbsp;type&nbsp;the&nbsp;state&nbsp;and&nbsp;<br>
+city&nbsp;names&nbsp;to&nbsp;create&nbsp;your&nbsp;dictionary&nbsp;with&nbsp;an&nbsp;assignment&nbsp;statement.<br>
+a.&nbsp;Read&nbsp;each&nbsp;line&nbsp;of&nbsp;the&nbsp;text&nbsp;file&nbsp;as&nbsp;a&nbsp;string.&nbsp;Note&nbsp;that&nbsp;each&nbsp;data&nbsp;line&nbsp;is&nbsp;in<br>
+the&nbsp;format&nbsp;“city,&nbsp;state”.&nbsp;Each&nbsp;line&nbsp;is&nbsp;terminated&nbsp;with&nbsp;a&nbsp;‘<br>
+’&nbsp;that&nbsp;needs<br>
+to&nbsp;be&nbsp;stripped.&nbsp;[hint:&nbsp;rstrip(&nbsp;)&nbsp;]<br>
+b.&nbsp;With&nbsp;the&nbsp;comma&nbsp;as&nbsp;separator,&nbsp;you&nbsp;have&nbsp;to&nbsp;find&nbsp;the&nbsp;position&nbsp;of&nbsp;the<br>
+comma&nbsp;and&nbsp;separate&nbsp;the&nbsp;string&nbsp;into&nbsp;city&nbsp;name&nbsp;and&nbsp;state&nbsp;name.&nbsp;[hint:<br>
+split(&nbsp;)&nbsp;]<br>
+c.&nbsp;Add&nbsp;each&nbsp;state-capital&nbsp;pair&nbsp;to&nbsp;your&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;state&nbsp;as&nbsp;the&nbsp;key<br>
+and&nbsp;the&nbsp;capital&nbsp;as&nbsp;the&nbsp;value.<br>
+&nbsp;<br>
+2.&nbsp;After&nbsp;your&nbsp;dictionary&nbsp;is&nbsp;set&nbsp;up,&nbsp;you&nbsp;are&nbsp;ready&nbsp;to&nbsp;create&nbsp;Phase&nbsp;1&nbsp;of&nbsp;your&nbsp;<br>
+game,&nbsp;which&nbsp;is&nbsp;to&nbsp;help&nbsp;your&nbsp;user&nbsp;learn&nbsp;the&nbsp;capital&nbsp;of&nbsp;each&nbsp;state.&nbsp;Your&nbsp;program&nbsp;<br>
+will&nbsp;ask&nbsp;the&nbsp;user&nbsp;to&nbsp;input&nbsp;a&nbsp;state,&nbsp;and&nbsp;using&nbsp;the&nbsp;dictionary,&nbsp;your&nbsp;program&nbsp;will<br>
+output&nbsp;the&nbsp;capital&nbsp;of&nbsp;that&nbsp;state.&nbsp;Your&nbsp;program&nbsp;will&nbsp;loop&nbsp;to&nbsp;allow&nbsp;user&nbsp;to&nbsp;have<br>
+as&nbsp;many&nbsp;tries&nbsp;as&nbsp;desired&nbsp;but&nbsp;will&nbsp;allow&nbsp;the&nbsp;user&nbsp;to&nbsp;opt&nbsp;out&nbsp;to&nbsp;enter&nbsp;Phase&nbsp;2&nbsp;of<br>
+the&nbsp;game.<br>
+&nbsp;<br>
+3.&nbsp;From&nbsp;the&nbsp;dictionary,&nbsp;create&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;keys&nbsp;(state&nbsp;names).&nbsp;[hint:&nbsp;keys(&nbsp;)<br>
+returns&nbsp;the&nbsp;keys&nbsp;as&nbsp;dict_keys&nbsp;type.&nbsp;Function&nbsp;list(&nbsp;)&nbsp;will&nbsp;convert&nbsp;/&nbsp;cast&nbsp;them&nbsp;<br>
+into&nbsp;a&nbsp;list.]<br>
+&nbsp;<br>
+4.&nbsp;Phase&nbsp;2&nbsp;of&nbsp;the&nbsp;game&nbsp;is&nbsp;to&nbsp;build&nbsp;a&nbsp;quizlet&nbsp;to&nbsp;ask&nbsp;user&nbsp;to&nbsp;give&nbsp;the&nbsp;name&nbsp;of&nbsp;<br>
+the&nbsp;capital&nbsp;for&nbsp;a&nbsp;randomly&nbsp;chosen&nbsp;state.<br>
+a.&nbsp;Generate&nbsp;a&nbsp;random&nbsp;number&nbsp;(1&nbsp;to&nbsp;50)&nbsp;to&nbsp;select&nbsp;a&nbsp;random&nbsp;state&nbsp;from<br>
+the&nbsp;list.<br>
+b.&nbsp;Prompt&nbsp;user&nbsp;to&nbsp;type&nbsp;in&nbsp;capital’s&nbsp;name&nbsp;for&nbsp;that&nbsp;state.&nbsp;Match&nbsp;user’s<br>
+input&nbsp;to&nbsp;see&nbsp;if&nbsp;the&nbsp;response&nbsp;is&nbsp;correct&nbsp;or&nbsp;incorrect.<br>
+c.&nbsp;Keep&nbsp;count&nbsp;for&nbsp;correct&nbsp;and&nbsp;incorrect&nbsp;responses<br>
+d.&nbsp;Repeat&nbsp;for&nbsp;a&nbsp;total&nbsp;of&nbsp;5&nbsp;tries.&nbsp;Display&nbsp;game&nbsp;result.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pydoc.html">pydoc</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-createDictionary"><strong>createDictionary</strong></a>()</dt><dd><tt>Reads&nbsp;the&nbsp;state&nbsp;and&nbsp;capital&nbsp;information&nbsp;from&nbsp;a&nbsp;file&nbsp;and&nbsp;creates&nbsp;a&nbsp;dictionary<br>
+where&nbsp;the&nbsp;state&nbsp;names&nbsp;are&nbsp;keys&nbsp;and&nbsp;the&nbsp;capital&nbsp;cities&nbsp;are&nbsp;values.<br>
+The&nbsp;data&nbsp;is&nbsp;read&nbsp;from&nbsp;a&nbsp;text&nbsp;file&nbsp;in&nbsp;the&nbsp;format&nbsp;"city,&nbsp;state".<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;A&nbsp;dictionary&nbsp;with&nbsp;states&nbsp;as&nbsp;keys&nbsp;and&nbsp;their&nbsp;corresponding&nbsp;capitals&nbsp;as&nbsp;values.</tt></dd></dl>
+ <dl><dt><a name="-createListOfKeys"><strong>createListOfKeys</strong></a>(statesAndCapitals)</dt><dd><tt>Creates&nbsp;a&nbsp;list&nbsp;of&nbsp;state&nbsp;names&nbsp;from&nbsp;the&nbsp;provided&nbsp;dictionary&nbsp;of&nbsp;states&nbsp;and&nbsp;capitals.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;statesAndCapitals&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;with&nbsp;state&nbsp;names&nbsp;as&nbsp;keys&nbsp;and&nbsp;capitals&nbsp;as&nbsp;values.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;A&nbsp;list&nbsp;of&nbsp;state&nbsp;names.</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>The&nbsp;main&nbsp;function&nbsp;to&nbsp;run&nbsp;the&nbsp;program.<br>
+It&nbsp;initializes&nbsp;the&nbsp;game&nbsp;by&nbsp;creating&nbsp;the&nbsp;dictionary,&nbsp;running&nbsp;Phase&nbsp;1,<br>
+creating&nbsp;the&nbsp;list&nbsp;of&nbsp;states,&nbsp;and&nbsp;conducting&nbsp;Phase&nbsp;2&nbsp;quiz.</tt></dd></dl>
+ <dl><dt><a name="-phaseOneLearn"><strong>phaseOneLearn</strong></a>(statesAndCapitals)</dt><dd><tt>Allows&nbsp;the&nbsp;user&nbsp;to&nbsp;input&nbsp;a&nbsp;state&nbsp;name&nbsp;to&nbsp;learn&nbsp;its&nbsp;capital.<br>
+The&nbsp;user&nbsp;can&nbsp;continue&nbsp;learning&nbsp;or&nbsp;opt&nbsp;to&nbsp;move&nbsp;on&nbsp;to&nbsp;Phase&nbsp;2&nbsp;(the&nbsp;quiz).<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;statesAndCapitals&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;with&nbsp;state&nbsp;names&nbsp;as&nbsp;keys&nbsp;and&nbsp;capitals&nbsp;as&nbsp;values.</tt></dd></dl>
+ <dl><dt><a name="-phaseTwoQuizlet"><strong>phaseTwoQuizlet</strong></a>(statesAndCapitals, statesList)</dt><dd><tt>Conducts&nbsp;a&nbsp;quiz&nbsp;where&nbsp;the&nbsp;user&nbsp;is&nbsp;asked&nbsp;to&nbsp;provide&nbsp;the&nbsp;capital&nbsp;for&nbsp;a&nbsp;randomly&nbsp;chosen&nbsp;state.<br>
+Tracks&nbsp;correct&nbsp;and&nbsp;incorrect&nbsp;answers&nbsp;and&nbsp;displays&nbsp;the&nbsp;results&nbsp;after&nbsp;five&nbsp;attempts.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;statesAndCapitals&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;with&nbsp;state&nbsp;names&nbsp;as&nbsp;keys&nbsp;and&nbsp;capitals&nbsp;as&nbsp;values.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;statesList&nbsp;(list):&nbsp;A&nbsp;list&nbsp;of&nbsp;state&nbsp;names&nbsp;for&nbsp;selecting&nbsp;random&nbsp;states.</tt></dd></dl>
+</td></tr></table>
+</body></html>
