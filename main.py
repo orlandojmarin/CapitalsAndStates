@@ -1,6 +1,7 @@
 """
 Orlando Marin
 Project number 2
+October 2024
 
 Given the attached file of the 50 states and capitals, Project 2 is to create 
 a game that will help your user learn the capital name of each state (Phase 1) 
